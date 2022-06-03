@@ -1,0 +1,10 @@
+stages:
+  - test
+  
+Unit-Test:
+  stage: test
+  image: mcr.microsoft.com/dotnet/sdk:6.0
+  script:
+    - dotnet --version
+    - dotnet build
+    - dotnet test
